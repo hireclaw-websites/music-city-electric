@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music City Electric | Nashville's Premier Electricians</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-bolt"></i>
+                <span>Music City Electric</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#safety" class="nav-link">Safety</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i> Licensed & Insured in Tennessee
+            </div>
+            <h1 class="hero-title">
+                <span class="glow-text">Powering</span> Nashville's
+                <span class="highlight">Future</span>
+            </h1>
+            <p class="hero-subtitle">
+                Professional electrical services for homes and businesses across Music City. 
+                From historic bungalows to modern venues, we keep Nashville shining bright.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-bolt"></i> Get Free Quote
+                </a>
+                <a href="tel:+16155551234" class="btn btn-secondary">
+                    <i class="fas fa-phone"></i> (615) 555-1234
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5,000+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Emergency Service</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="electric-guitar">
+                <svg viewBox="0 0 200 400" class="guitar-svg">
+                    <defs>
+                        <linearGradient id="guitarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00d4ff"/>
+                            <stop offset="50%" style="stop-color:#0099cc"/>
+                            <stop offset="100%" style="stop-color:#006699"/>
+                        </linearGradient>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ffd700"/>
+                            <stop offset="100%" style="stop-color:#ffaa00"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Guitar body -->
+                    <ellipse cx="100" cy="280" rx="70" ry="90" fill="url(#guitarGrad)" stroke="#ffd700" stroke-width="3"/>
+                    <ellipse cx="100" cy="280" rx="50" ry="70" fill="none" stroke="#ffd700" stroke-width="2"/>
+                    <!-- Guitar neck -->
+                    <rect x="85" y="20" width="30" height="200" fill="#1a1a2e" stroke="#ffd700" stroke-width="2"/>
+                    <!-- Guitar headstock -->
+                    <path d="M75 20 Q70 0 90 5 L110 5 Q130 0 125 20 Z" fill="url(#guitarGrad)" stroke="#ffd700" stroke-width="2"/>
+                    <!-- Strings -->
+                    <line x1="90" y1="20" x2="90" y2="350" stroke="#ffd700" stroke-width="1.5"/>
+                    <line x1="96" y1="20" x2="96" y2="350" stroke="#ffd700" stroke-width="1.5"/>
+                    <line x1="102" y1="20" x2="102" y2="350" stroke="#ffd700" stroke-width="1.5"/>
+                    <line x1="108" y1="20" x2="108" y2="350" stroke="#ffd700" stroke-width="1.5"/>
+                    <line x1="114" y1="20" x2="114" y2="350" stroke="#ffd700" stroke-width="1.5"/>
+                    <line x1="120" y1="20" x2="120" y2="350" stroke="#ffd700" stroke-width="1.5"/>
+                    <!-- Lightning bolts -->
+                    <path d="M50 250 L30 280 L55 280 L35 320" fill="none" stroke="#00d4ff" stroke-width="3" class="lightning"/>
+                    <path d="M150 250 L170 280 L145 280 L165 320" fill="none" stroke="#00d4ff" stroke-width="3" class="lightning"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+                <p class="section-desc">Comprehensive electrical solutions for every need in Nashville</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Residential Electrical</h3>
+                    <p>Complete home electrical services from new wiring to outlet installation. We handle everything from historic home rewires to smart home upgrades.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> New Construction Wiring</li>
+                        <li><i class="fas fa-check"></i> Outlet & Switch Installation</li>
+                        <li><i class="fas fa-check"></i> Ceiling Fan Installation</li>
+                        <li><i class="fas fa-check"></i> Smart Home Integration</li>
+                    </ul>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Electrical</h3>
+                    <p>Powering Nashville's businesses, from honky-tonks on Broadway to corporate offices. Licensed for commercial projects of any scale.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Office Build-Outs</li>
+                        <li><i class="fas fa-check"></i> Retail Electrical</li>
+                        <li><i class="fas fa-check"></i> Restaurant & Bar Wiring</li>
+                        <li><i class="fas fa-check"></i> Tenant Improvements</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Panel Upgrades</h3>
+                    <p>Modernize your electrical system with a new panel. Essential for older Nashville homes and businesses adding high-power equipment.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> 200A Service Upgrades</li>
+                        <li><i class="fas fa-check"></i> Fuse to Breaker Conversion</li>
+                        <li><i class="fas fa-check"></i> Sub-Panel Installation</li>
+                        <li><i class="fas fa-check"></i> Code Compliance Updates</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Lighting Design</h3>
+                    <p>Transform your space with custom lighting solutions. From ambient home lighting to dramatic commercial installations.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> LED Retrofit & Upgrades</li>
+                        <li><i class="fas fa-check"></i> Landscape Lighting</li>
+                        <li><i class="fas fa-check"></i> Security Lighting</li>
+                        <li><i class="fas fa-check"></i> Custom Fixture Installation</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon emergency">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Emergency Repairs</h3>
+                    <p>Electrical emergencies don't wait for business hours. Our team is available 24/7 for urgent electrical issues across Nashville.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> 24/7 Emergency Response</li>
+                        <li><i class="fas fa-check"></i> Power Outage Restoration</li>
+                        <li><i class="fas fa-check"></i> Circuit Breaker Issues</li>
+                        <li><i class="fas fa-check"></i> Electrical Fire Prevention</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Inspections & Code</h3>
+                    <p>Ensure your property meets all electrical codes. We provide thorough inspections and bring systems up to current standards.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Home Inspection Repairs</li>
+                        <li><i class="fas fa-check"></i> Code Violation Corrections</li>
+                        <li><i class="fas fa-check"></i> Safety Inspections</li>
+                        <li><i class="fas fa-check"></i> Insurance Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">About Us</span>
+                    <h2>Nashville Born, <span class="highlight">Nashville Proud</span></h2>
+                    <p>Music City Electric was founded by Nashville natives who understand the unique electrical needs of our city's diverse architecture—from historic Victorian homes in Germantown to modern condos in The Gulch.</p>
+                    <p>We combine old-school craftsmanship with cutting-edge technology, delivering solutions that honor Nashville's heritage while powering its future.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Tennessee Licensed</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Fully Insured</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Local Team</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>5-Star Rated</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="nashville-skyline">
+                        <svg viewBox="0 0 400 200" class="skyline-svg">
+                            <defs>
+                                <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#0a0a1a"/>
+                                    <stop offset="100%" style="stop-color:#1a1a3e"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Skyline silhouette -->
+                            <rect x="0" y="0" width="400" height="200" fill="url(#skyGrad)"/>
+                            <!-- Buildings -->
+                            <rect x="20" y="120" width="30" height="80" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1"/>
+                            <rect x="55" y="100" width="25" height="100" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1"/>
+                            <rect x="85" y="140" width="35" height="60" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1"/>
+                            <rect x="125" y="80" width="40" height="120" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1"/>
+                            <rect x="170" y="110" width="30" height="90" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1"/>
+                            <!-- Batman Building (AT&T) -->
+                            <rect x="210" y="40" width="50" height="160" fill="#1a1a2e" stroke="#ffd700" stroke-width="2"/>
+                            <ellipse cx="235" cy="35" rx="30" ry="10" fill="#1a1a2e" stroke="#ffd700" stroke-width="2"/>
+                            <rect x="205" y="50" width="60" height="15" fill="#1a1a2e" stroke="#ffd700" stroke-width="1"/>
+                            <rect x="205" y="175" width="60" height="15" fill="#1a1a2e" stroke="#ffd700" stroke-width="1"/>
+                            <rect x="270" y="100" width="25" height="100" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1"/>
+                            <rect x="300" y="130" width="30" height="70" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1"/>
+                            <rect x="335" y="90" width="25" height="110" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1"/>
+                            <rect x="365" y="140" width="25" height="60" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1"/>
+                            <!-- Windows with lights -->
+                            <rect x="220" y="70" width="8" height="8" fill="#ffd700" class="window-light"/>
+                            <rect x="242" y="70" width="8" height="8" fill="#ffd700" class="window-light"/>
+                            <rect x="220" y="90" width="8" height="8" fill="#00d4ff" class="window-light"/>
+                            <rect x="242" y="90" width="8" height="8" fill="#00d4ff" class="window-light"/>
+                            <rect x="220" y="110" width="8" height="8" fill="#ffd700" class="window-light"/>
+                            <rect x="242" y="110" width="8" height="8" fill="#ffd700" class="window-light"/>
+                            <!-- Lightning bolts -->
+                            <path d="M100 50 L90 70 L105 70 L95 100" fill="none" stroke="#00d4ff" stroke-width="2" class="sky-lightning"/>
+                            <path d="M320 60 L330 80 L315 80 L325 110" fill="none" stroke="#ffd700" stroke-width="2" class="sky-lightning"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section id="safety" class="safety">
+        <div class="container">
+            <div class="safety-header">
+                <span class="section-tag">Your Safety First</span>
+                <h2 class="section-title">Electrical <span class="highlight">Safety</span></h2>
+                <p class="section-desc">Don't take chances with electricity. Know the warning signs.</p>
+            </div>
+            <div class="safety-grid">
+                <div class="safety-card warning">
+                    <div class="safety-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Warning Signs</h3>
+                    <ul>
+                        <li>Flickering or dimming lights</li>
+                        <li>Burning smell from outlets</li>
+                        <li>Warm or discolored wall plates</li>
+                        <li>Frequent circuit breaker trips</li>
+                        <li>Buzzing or sizzling sounds</li>
+                        <li>Shocks when touching appliances</li>
+                    </ul>
+                </div>
+                <div class="safety-card tips">
+                    <div class="safety-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety Tips</h3>
+                    <ul>
+                        <li>Never overload outlets</li>
+                        <li>Use GFCI outlets in wet areas</li>
+                        <li>Keep electrical devices away from water</li>
+                        <li>Don't use damaged cords</li>
+                        <li>Test smoke detectors monthly</li>
+                        <li>Schedule regular inspections</li>
+                    </ul>
+                </div>
+                <div class="safety-card emergency-box">
+                    <div class="safety-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Emergency? Call Now!</h3>
+                    <p class="emergency-text">If you smell burning, see sparks, or have a complete power loss, call us immediately. Electrical emergencies can be life-threatening.</p>
+                    <a href="tel:+16155551234" class="btn btn-emergency">
+                        <i class="fas fa-bolt"></i> (615) 555-1234
+                    </a>
+                    <p class="emergency-note">24/7 Emergency Service Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Nashville <span class="highlight">Says</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Music City Electric rewired our entire 1920s home in East Nashville. They were respectful of the historic details while bringing everything up to modern code. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah M.</span>
+                            <span class="author-location">East Nashville</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Our bar on Broadway lost power during a busy Saturday night. They arrived in 30 minutes and had us back up and running. True professionals!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">J</div>
+                        <div class="author-info">
+                            <span class="author-name">James T.</span>
+                            <span class="author-location">Downtown Nashville</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Upgraded our panel to 200A and added EV charging. Clean work, fair pricing, and they cleaned up perfectly afterward. Will use again!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <span class="author-name">Michael R.</span>
+                            <span class="author-location">The Gulch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2>Ready to Power <span class="highlight">Your Project?</span></h2>
+                    <p>Contact us for a free estimate. We serve all of Nashville and surrounding areas including Franklin, Brentwood, and Hendersonville.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+16155551234">(615) 555-1234</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:info@musiccityelectric.com">info@musiccityelectric.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Service Area</span>
+                                <span>Nashville, TN & Surrounding Areas</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Hours</span>
+                                <span>Mon-Fri: 7AM-7PM | 24/7 Emergency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Request a Free Quote</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(615) 555-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service...</option>
+                                <option value="residential">Residential Electrical</option>
+                                <option value="commercial">Commercial Electrical</option>
+                                <option value="panel">Panel Upgrade</option>
+                                <option value="lighting">Lighting Design</option>
+                                <option value="emergency">Emergency Repair</option>
+                                <option value="inspection">Inspection/Code</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>Music City Electric</span>
+                    </div>
+                    <p>Nashville's premier electrical contractor. Licensed, insured, and committed to excellence since 2009.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Residential</a></li>
+                        <li><a href="#services">Commercial</a></li>
+                        <li><a href="#services">Panel Upgrades</a></li>
+                        <li><a href="#services">Lighting</a></li>
+                        <li><a href="#services">Emergency Repairs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#safety">Safety</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> (615) 555-1234</p>
+                    <p><i class="fas fa-envelope"></i> info@musiccityelectric.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nashville, TN</p>
+                    <p class="license">TN License #ELC-12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Music City Electric. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
